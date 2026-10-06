@@ -1,0 +1,6 @@
+agent_064
+controller_064
+downloads/
+agentfiles/
+*.log
+big.bin

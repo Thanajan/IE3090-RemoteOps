@@ -1,0 +1,15 @@
+# Makefile_064 - RemoteOps (IT24102064)
+# Build:  make -f Makefile_064
+CC      = gcc
+CFLAGS  = -Wall -Wextra -O2
+all: agent_064 controller_064
+
+agent_064: agent_064.c
+	$(CC) $(CFLAGS) -o $@ $< -lpthread
+
+controller_064: controller_064.c
+	$(CC) $(CFLAGS) -o $@ $<
+
+clean:
+	rm -f agent_064 controller_064
+.PHONY: all clean
